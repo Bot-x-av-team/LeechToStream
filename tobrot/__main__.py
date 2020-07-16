@@ -119,19 +119,19 @@ if __name__ == "__main__" :
     #
     rename_message_handler = MessageHandler(
         rename_message_f,
-        filters=Filters.command(["rename"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["rename@movieshuntleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(rename_message_handler)
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["upload"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload@movieshuntleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
     help_text_handler = MessageHandler(
         help_message_f,
-        filters=Filters.command(["help"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["help@movieshuntleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(help_text_handler)
     #
@@ -154,13 +154,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumb"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumb@movieshuntleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["delthumb"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["delthumb@movieshuntleechbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
